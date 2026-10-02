@@ -1,8 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
- 
 const pool = require("./config/database");
+const tenantRoutes = require("./routes/tenant.routes");
+const branchRoutes = require("./routes/branch.routes");
  
 const app = express();
  
@@ -13,6 +14,8 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use("/api/tenants", tenantRoutes);
+app.use("/api/tenants/:tenantId/branches", branchRoutes);
  
 // ==============================
 // RUTA PRINCIPAL
