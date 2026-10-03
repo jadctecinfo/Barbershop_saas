@@ -8,4 +8,6 @@ mergeParams: true
  
 router.get("/", branchController.getBranchesByTenant);
  
+router.post("/", branchController.createBranch);
+ 
 module.exports = router;

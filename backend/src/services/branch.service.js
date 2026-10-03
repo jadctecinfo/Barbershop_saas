@@ -7,5 +7,6 @@ return branches;
 }
  
 module.exports = {
-getBranchesByTenantId
+getBranchesByTenantId,
+createBranch
 };

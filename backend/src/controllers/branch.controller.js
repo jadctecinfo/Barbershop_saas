@@ -22,5 +22,6 @@ message: "Error interno del servidor"
 }
  
 module.exports = {
-getBranchesByTenant
+getBranchesByTenant,
+createBranch
 };

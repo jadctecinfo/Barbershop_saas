@@ -25,5 +25,6 @@ return rows;
 }
  
 module.exports = {
-findByTenantId
+findByTenantId,
+create
 };
