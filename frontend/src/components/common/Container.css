@@ -1,0 +1,17 @@
+.app-container {
+  width: 100%;
+  max-width: var(--container-max-width);
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+}
+
+@media (max-width: 640px) {
+  .app-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

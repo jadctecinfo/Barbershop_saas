@@ -1,0 +1,480 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 7rem;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fbff 100%
+  );
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero__content {
+  max-width: 39rem;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1.5rem;
+  padding: 0.45rem 0.8rem;
+
+  border: 1px solid var(--color-brand-100);
+  border-radius: var(--radius-pill);
+
+  color: var(--color-brand-700);
+  background: var(--color-brand-50);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.hero__eyebrow-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: var(--color-brand-500);
+}
+
+.hero__title {
+  margin-bottom: 1.5rem;
+
+  color: var(--color-primary-900);
+
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.hero__title span {
+  color: var(--color-brand-600);
+}
+
+.hero__title strong {
+  display: block;
+  color: var(--color-primary-900);
+}
+
+.hero__description {
+  max-width: 36rem;
+
+  margin-bottom: 2rem;
+
+  color: var(--text-secondary);
+
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  margin-bottom: 2rem;
+}
+
+.hero__benefits {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.75rem 1.5rem;
+}
+
+.hero__benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--text-secondary);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.hero__check {
+  display: inline-flex;
+
+  width: 1.4rem;
+  height: 1.4rem;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--color-success);
+  background: var(--color-success-light);
+
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/* =====================================
+   VISUAL DEL HERO
+   ===================================== */
+
+.hero__visual {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.hero-dashboard {
+  overflow: hidden;
+
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-2xl);
+
+  background: var(--color-white);
+
+  box-shadow: var(--shadow-xl);
+}
+
+/* =====================================
+   CABECERA DEL DASHBOARD
+   ===================================== */
+
+.hero-dashboard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 1.5rem;
+
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-dashboard__top > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hero-dashboard__label {
+  color: var(--text-muted);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-dashboard__top strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+}
+
+.hero-dashboard__status {
+  padding: 0.4rem 0.7rem;
+
+  border-radius: var(--radius-pill);
+
+  color: var(--color-success);
+  background: var(--color-success-light);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* =====================================
+   ESTADISTICAS
+   ===================================== */
+
+.hero-dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: var(--border-light);
+}
+
+.hero-dashboard__stats > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+
+  padding: 1.25rem;
+
+  background: var(--color-white);
+}
+
+.hero-dashboard__stats span {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+.hero-dashboard__stats strong {
+  color: var(--color-primary-900);
+  font-size: var(--font-size-2xl);
+}
+
+/* =====================================
+   AGENDA
+   ===================================== */
+
+.hero-dashboard__agenda {
+  padding: 1.25rem;
+}
+
+.hero-dashboard__agenda-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 0.75rem;
+
+  color: var(--text-muted);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-dashboard__appointment,
+.hero-dashboard__slot {
+  display: grid;
+  grid-template-columns: 4rem 1fr auto;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-white);
+}
+
+.hero-dashboard__appointment
+  + .hero-dashboard__appointment,
+.hero-dashboard__appointment
+  + .hero-dashboard__slot {
+  margin-top: 0.75rem;
+}
+
+.hero-dashboard__time {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-dashboard__time strong {
+  color: var(--color-primary-900);
+}
+
+.hero-dashboard__time span {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+.hero-dashboard__client {
+  display: flex;
+  min-width: 0;
+
+  flex-direction: column;
+
+  gap: 0.15rem;
+}
+
+.hero-dashboard__client strong {
+  overflow: hidden;
+
+  color: var(--text-primary);
+
+  font-size: var(--font-size-sm);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-dashboard__client span {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+.hero-dashboard__badge {
+  padding: 0.4rem 0.65rem;
+
+  border-radius: var(--radius-pill);
+
+  color: var(--color-success);
+  background: var(--color-success-light);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.hero-dashboard__badge--pending {
+  color: var(--color-warning);
+  background: var(--color-warning-light);
+}
+
+.hero-dashboard__slot {
+  color: var(--color-brand-600);
+
+  border-style: dashed;
+
+  background: var(--color-brand-50);
+}
+
+.hero-dashboard__slot strong {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* =====================================
+   NOTIFICACION FLOTANTE
+   ===================================== */
+
+.hero__floating-card {
+  position: absolute;
+
+  right: -0.5rem;
+  bottom: -0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  min-width: 13.5rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+
+  background: var(--color-white);
+
+  box-shadow: var(--shadow-lg);
+}
+
+.hero__floating-icon {
+  display: inline-flex;
+
+  width: 2.25rem;
+  height: 2.25rem;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--color-white);
+  background: var(--color-success);
+
+  font-weight: var(--font-weight-bold);
+}
+
+.hero__floating-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.hero__floating-card strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.hero__floating-card div span {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+/* =====================================
+   TABLET
+   ===================================== */
+
+@media (max-width: 1024px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero__content {
+    max-width: 44rem;
+  }
+
+  .hero__visual {
+    width: min(100%, 42rem);
+    margin-inline: auto;
+  }
+}
+
+/* =====================================
+   MOVIL
+   ===================================== */
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 4rem 0 5rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .app-button {
+    width: 100%;
+  }
+
+  .hero__benefits {
+    flex-direction: column;
+  }
+
+  .hero__visual {
+    padding: 0.5rem;
+  }
+
+  .hero-dashboard__top {
+    align-items: flex-start;
+  }
+
+  .hero-dashboard__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-dashboard__appointment,
+  .hero-dashboard__slot {
+    grid-template-columns: 3.5rem 1fr;
+  }
+
+  .hero-dashboard__badge {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .hero__floating-card {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    width: calc(100% - 1rem);
+
+    margin: 1rem auto 0;
+  }
+}

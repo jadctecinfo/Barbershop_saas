@@ -1,0 +1,144 @@
+.features {
+  padding: 6rem 0;
+  background: var(--color-white);
+}
+
+.features__header {
+  max-width: 46rem;
+  margin-bottom: 3rem;
+}
+
+.features__eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  color: var(--color-brand-600);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.features__header h2 {
+  margin-bottom: 1.25rem;
+
+  color: var(--color-primary-900);
+
+  letter-spacing: -0.035em;
+}
+
+.features__header p {
+  max-width: 40rem;
+  margin-bottom: 0;
+
+  color: var(--text-secondary);
+
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.25rem;
+}
+
+.features__card {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 1.25rem;
+
+  padding: 1.75rem;
+
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+
+  background: var(--surface-primary);
+
+  box-shadow: var(--shadow-xs);
+
+  transition:
+    transform var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.features__card:hover {
+  transform: translateY(-3px);
+
+  border-color: var(--color-brand-100);
+
+  box-shadow: var(--shadow-md);
+}
+
+.features__number {
+  display: inline-flex;
+
+  width: 3rem;
+  height: 3rem;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radius-lg);
+
+  color: var(--color-brand-600);
+  background: var(--color-brand-50);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.features__content {
+  min-width: 0;
+}
+
+.features__content h3 {
+  margin-bottom: 0.6rem;
+
+  color: var(--color-primary-900);
+
+  font-size: var(--font-size-xl);
+  line-height: 1.3;
+}
+
+.features__content p {
+  margin-bottom: 0;
+
+  color: var(--text-secondary);
+
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .features {
+    padding: 4.5rem 0;
+  }
+
+  .features__header {
+    margin-bottom: 2rem;
+  }
+
+  .features__card {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .features__number {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}

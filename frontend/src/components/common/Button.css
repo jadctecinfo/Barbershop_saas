@@ -1,0 +1,182 @@
+.app-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--space-2);
+
+  border:
+    1px solid transparent;
+
+  border-radius:
+    var(--radius-md);
+
+  font-weight:
+    var(--font-weight-semibold);
+
+  line-height: 1;
+
+  text-align: center;
+
+  white-space: nowrap;
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.app-button:hover {
+  transform:
+    translateY(-1px);
+}
+
+.app-button:active {
+  transform:
+    translateY(0);
+}
+
+/* =====================================
+   TAMANOS
+   ===================================== */
+
+.app-button--small {
+  min-height: 2.25rem;
+
+  padding:
+    0.6rem 1rem;
+
+  font-size:
+    var(--font-size-sm);
+}
+
+.app-button--medium {
+  min-height: 2.875rem;
+
+  padding:
+    0.8rem 1.3rem;
+
+  font-size:
+    var(--font-size-base);
+}
+
+.app-button--large {
+  min-height: 3.25rem;
+
+  padding:
+    0.95rem 1.6rem;
+
+  font-size:
+    var(--font-size-base);
+}
+
+/* =====================================
+   PRIMARY
+   ===================================== */
+
+.app-button--primary {
+  color:
+    var(--color-white);
+
+  background:
+    var(--color-brand-600);
+
+  box-shadow:
+    0 8px 20px
+    rgba(37, 99, 235, 0.2);
+}
+
+.app-button--primary:hover {
+  background:
+    var(--color-brand-700);
+
+  box-shadow:
+    0 10px 25px
+    rgba(37, 99, 235, 0.28);
+}
+
+/* =====================================
+   SECONDARY
+   ===================================== */
+
+.app-button--secondary {
+  color:
+    var(--text-primary);
+
+  background:
+    var(--color-white);
+
+  border-color:
+    var(--border-light);
+
+  box-shadow:
+    var(--shadow-xs);
+}
+
+.app-button--secondary:hover {
+  border-color:
+    var(--border-medium);
+
+  background:
+    var(--color-gray-50);
+}
+
+/* =====================================
+   DARK
+   ===================================== */
+
+.app-button--dark {
+  color:
+    var(--color-white);
+
+  background:
+    var(--color-primary-900);
+}
+
+.app-button--dark:hover {
+  background:
+    var(--color-primary-800);
+}
+
+/* =====================================
+   GHOST
+   ===================================== */
+
+.app-button--ghost {
+  color:
+    var(--text-secondary);
+
+  background:
+    transparent;
+}
+
+.app-button--ghost:hover {
+  color:
+    var(--color-brand-600);
+
+  background:
+    var(--color-brand-50);
+}
+
+/* =====================================
+   FULL WIDTH
+   ===================================== */
+
+.app-button--full {
+  width: 100%;
+}
+
+/* =====================================
+   DISABLED
+   ===================================== */
+
+.app-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.55;
+
+  transform: none;
+}

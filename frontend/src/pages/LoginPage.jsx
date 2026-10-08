@@ -1,0 +1,11 @@
+export default function LoginPage() {
+return (
+<main>
+<h1>Iniciar sesión</h1>
+
+<p>
+Accede al panel administrativo de tu barbería.
+</p>
+</main>
+);
+}
